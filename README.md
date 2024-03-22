@@ -12,6 +12,7 @@ The critical question for our clients, upon receiving an appraisal, is determini
   Evaluation: The model in a classification task, means you can either make a correct prediction or an incorrect one. 
 
 ### Classification Steps:
+In this section of the project, I aim to classify houses into two categories based on their price: "Expensive" (labeled as 1) and "Not Expensive" (labeled as 0). This classification helps in understanding the affordability and market segmentation of houses in the dataset.
 housing_prices_classification: Includes steps from intuition-based modeling techniques to the evaluation of model accuracy. This evaluation statistical metrics implemented to assess the model's performancewere the Confusion Matrix, F1 Score, and Cohen's Kappa Score. It was employed also a diverse set of predictive modeling techniques, including decision trees, K-nearest neighbors, Random Forest, and logistic regression. Additionally, the methodology integrates advanced data processing techniques, such as one-hot encoding and ordinal encoding, alongside optimization strategies like grid search.
 
 ### Regression Task
