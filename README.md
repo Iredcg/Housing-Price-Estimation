@@ -19,3 +19,14 @@ Objective: Build a regression model to predict a house's exact price.
 Evaluation: Given the nature of regression, perfect accuracy is improbable; performance metrics will assess prediction closeness.
 
 Regression Steps:
+
+### Project Methodology
+
+  * Initiate with an Intuition-Based Model as a baseline.
+  * Data Cleaning and Preprocessing.
+  * Division of Data into Training and Test Sets.
+  * Pipeline Creation for Streamlined Processing.
+  * Implementation of Predictive Algorithms.
+  * Accuracy Evaluation and Adjustment.
+  * Deployment of the Model for Test Data Predictions.
+  * Final Review of Model Performance.
