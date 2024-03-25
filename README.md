@@ -2,32 +2,31 @@
 ## Overview & Objectives
 ### Business Challenge
 
-In a real estate consultancy with a diverse clientele including developers, agents, and investors, setting accurate prices is crucial. Traditionally, the task of valuing properties has been the responsibility of appraisers, who must follow stringent criteria to ensure fairness for both buyers and sellers.
-The critical question for our clients, upon receiving an appraisal, is determining if the property's "true value" aligns with or deviates from the appraised value. Our consultancy aims to leverage data to provide a reliable and efficient solution to this question. We have acquired a comprehensive dataset of historical housing transactions in Ames, Iowa, encompassing about 80 different attributes for each property, such as size, condition, and presence of a backyard, among others. The goal is to develop a predictive model that can estimate a property's market value based on its characteristics.
+In a real estate consultancy serving a diverse clientele of developers, agents, and investors, accurately setting property prices is paramount. Traditionally, property appraisals have been conducted by experts adhering to strict criteria, ensuring fairness for both buyers and sellers. A significant challenge arises when clients question if the appraised value truly reflects a property's market value. Our consultancy seeks to address this by leveraging a comprehensive dataset of historical housing transactions from Ames, Iowa, which includes around 80 attributes per property, such as size, condition, and the presence of a backyard. The aim is to develop a predictive model capable of estimating a property's market value based on its features.
 
 ## Approach
-### Classification Task
-
-  Objective: Develop a classification model to determine if a house is considered expensive.
-  Evaluation: The model in a classification task, means you can either make a correct prediction or an incorrect one. 
+### Classification Task:
+  Objective: Develop a model to classify houses as either "Expensive" (1) or "Not Expensive" (0), aiding in the understanding of affordability and market segmentation.
+  Evaluation:Accuracy in classification tasks is binary; predictions are either correct or incorrect.
 
 ### Classification Steps:
-In this section of the project, I aim to classify houses into two categories based on their price: "Expensive" (labeled as 1) and "Not Expensive" (labeled as 0). This classification helps in understanding the affordability and market segmentation of houses in the dataset.
-housing_prices_classification: Includes steps from intuition-based modeling techniques to the evaluation of model accuracy. This evaluation statistical metrics implemented to assess the model's performancewere the Confusion Matrix, F1 Score, and Cohen's Kappa Score. It was employed also a diverse set of predictive modeling techniques, including decision trees, K-nearest neighbors, Random Forest, and logistic regression. Additionally, the methodology integrates advanced data processing techniques, such as one-hot encoding and ordinal encoding, alongside optimization strategies like grid search.
+This project segment, housing_prices_classification, aims to categorize houses based on their price. The approach includes a progression from intuition-based modeling to detailed evaluation of model accuracy. We utilize statistical metrics such as the Confusion Matrix, F1 Score, and Cohen's Kappa Score to assess performance. A variety of predictive modeling techniques, including decision trees, K-nearest neighbors, random forest, and logistic regression, are employed alongside advanced data processing methods like one-hot encoding and ordinal encoding. Optimization strategies such as grid search are also integrated.
 
-### Regression Task
-Objective: Build a regression model to predict a house's exact price.
-Evaluation: Given the nature of regression, perfect accuracy is improbable; performance metrics will assess prediction closeness.
+### Regression Task:
+Objective: Construct a regression model to predict the exact price of a house.
+Evaluation: Absolute accuracy is unlikely in regression tasks; thus, metrics will measure how close predictions are to actual prices.
 
-Regression Steps:
+### Regression Steps:
+The housing_prices_regression phase focuses on predicting house prices in dollars, marking a shift to a regression task. Data preparation involves MinMaxScaler, SimpleImputer, and OneHotEncoder, followed by the application of machine learning models like the DecisionTreeRegressor, KNeighborsRegressor, LinearRegression, and RandomForestRegressor. Various feature selection techniques and GridSearchCV for hyperparameter tuning are utilized. Model evaluation and prediction are based on r2_score and mean_squared_log_error metrics.
 
 ### Project Methodology
 
-  * Initiate with an Intuition-Based Model as a baseline.
-  * Data Cleaning and Preprocessing.
-  * Division of Data into Training and Test Sets.
-  * Pipeline Creation for Streamlined Processing.
-  * Implementation of Predictive Algorithms.
-  * Accuracy Evaluation and Adjustment.
-  * Deployment of the Model for Test Data Predictions.
-  * Final Review of Model Performance.
+* Start with an Intuition-Based Model for an initial baseline.
+* Conduct Data Cleaning and Preprocessing for optimal data quality.
+* Split the data into Training and Test Sets for model validation.
+* Create a Pipeline for efficient data and model processing.
+* Implement Predictive Algorithms to explore different modeling approaches.
+* Evaluate Accuracy and make necessary adjustments to improve model performance.
+* Deploy the Model on Test Data to predict housing prices.
+* Perform a Final Review of Model Performance to ensure reliability and accuracy.
+
