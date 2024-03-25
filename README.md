@@ -6,15 +6,19 @@ In a real estate consultancy serving a diverse clientele of developers, agents, 
 
 ## Approach
 ### Classification Task:
+  
   Objective: Develop a model to classify houses as either "Expensive" (1) or "Not Expensive" (0), aiding in the understanding of affordability and market segmentation.
+  
   Evaluation:Accuracy in classification tasks is binary; predictions are either correct or incorrect.
 
 ### Classification Steps:
 This project segment, housing_prices_classification, aims to categorize houses based on their price. The approach includes a progression from intuition-based modeling to detailed evaluation of model accuracy. We utilize statistical metrics such as the Confusion Matrix, F1 Score, and Cohen's Kappa Score to assess performance. A variety of predictive modeling techniques, including decision trees, K-nearest neighbors, random forest, and logistic regression, are employed alongside advanced data processing methods like one-hot encoding and ordinal encoding. Optimization strategies such as grid search are also integrated.
 
 ### Regression Task:
-Objective: Construct a regression model to predict the exact price of a house.
-Evaluation: Absolute accuracy is unlikely in regression tasks; thus, metrics will measure how close predictions are to actual prices.
+  
+  Objective: Construct a regression model to predict the exact price of a house.
+  
+  Evaluation: Absolute accuracy is unlikely in regression tasks; thus, metrics will measure how close predictions are to actual prices.
 
 ### Regression Steps:
 The housing_prices_regression phase focuses on predicting house prices in dollars, marking a shift to a regression task. Data preparation involves MinMaxScaler, SimpleImputer, and OneHotEncoder, followed by the application of machine learning models like the DecisionTreeRegressor, KNeighborsRegressor, LinearRegression, and RandomForestRegressor. Various feature selection techniques and GridSearchCV for hyperparameter tuning are utilized. Model evaluation and prediction are based on r2_score and mean_squared_log_error metrics.
